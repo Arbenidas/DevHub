@@ -3,3 +3,7 @@
   padding: 0;
   font-family: Poppins;
 }
+body{
+  background: linear-gradient(to left, #192072, #080a25);
+
+}

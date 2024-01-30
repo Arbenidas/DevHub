@@ -11,8 +11,8 @@ import imagen3 from '../../Assets/image3.jpg'
           
 
 const Carrusel = () => {
-            btnRight.addEventListener("click", e => moveToRight()); /* Aca esta el problema */
-            btnLeft.addEventListener("click", e => moveToLeft()); /* Aca esta el problema */
+            // btnRight.addEventListener("click", e => moveToRight()); /* Aca esta el problema */
+            // btnLeft.addEventListener("click", e => moveToLeft()); /* Aca esta el problema */
             
     
             
