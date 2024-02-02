@@ -4,6 +4,7 @@
  
 }
 .navbar {
+  background-color: #191c24;
   position: relative; /* O utiliza "fixed" si quieres que sea fijo en la parte superior */
   z-index: 1000; /* Ajusta el valor según sea necesario */
 }
@@ -25,6 +26,24 @@ border-radius: 15px;  background-color: #191c24;
   background-color: #191c24;
 }
 .color-icon{
-  color: antiquewhite;
+  color: orange;
 }
 
+.no-border{
+  border: none;
+}
+.color-body{
+  color: antiquewhite;
+  background: #191c24;
+}
+.nav-link{
+  color: #fca311;
+}
+.no-padding-left{
+  padding-left:0 ;
+  margin-right:10px ;
+}
+
+.margin-right{
+  margin-right: 20px;
+}

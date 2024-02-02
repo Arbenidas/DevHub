@@ -2,19 +2,20 @@ function ComponenteInfoVideo() {
   return (
     <>
       {/*Video del curso*/}
-      <div class="col mt-5 Cuerpodiv">
+      <div class="col mt-5 Cuerpodiv margin-right">
         <article class=" videoCard  align-items-center">
           <div class="mt-4 asidecompo1">
-            <iframe
-              class="mt-4"
-              width="800"
-              height="500"
-              src="https://www.youtube.com/embed/bKcfm2xDQKo?si=BfmhuIdf-JtyNt66"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SXjIYRih13I?si=a8j8rQjFzQLt7OS4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
             {/* Botones para avanzar en el curso */}
 
             <div class=" clearfix ">
@@ -107,15 +108,6 @@ function ComponenteInfoVideo() {
                 utilizando la palabra clave return. Cuando se llama a una
                 función que devuelve un valor, la llamada a la función se evalúa
                 como ese valor.
-              </div>
-              <div
-                class="tab-pane fade"
-                id="nav-disabled"
-                role="tabpanel"
-                aria-labelledby="nav-disabled-tab"
-                tabindex="0"
-              >
-                ...
               </div>
             </div>
           </div>

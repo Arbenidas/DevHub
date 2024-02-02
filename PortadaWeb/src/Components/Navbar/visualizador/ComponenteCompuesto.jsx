@@ -4,10 +4,10 @@ import ComponenteInfoVideo from "./componenteInfoVideos.jsx";
 export default function ComponenteCompuesto() {
   return (
     <>
-      <div class="container">
+      <div class="container-fluid" data-bs-theme="dark">
         <div class="row">
-          <div class="col">
-            <div class="accordion " id="accordion1">
+          <div class="col-3 no-padding-left">
+            <div class="accordion accordion-flush" id="accordion1">
               <ComponenteAside
                 data1="#flush-collapseOne"
                 data2="flush-collapseOne"

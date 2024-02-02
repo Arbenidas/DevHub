@@ -2,9 +2,9 @@ import {} from "../../../App"
 export default function NavbarCV() {
   return (
     <>
-      <nav class="navbar colorNavbar">
+      <nav class="navbar" data-bs-theme="dark" >
         <div class="container-fluid">
-          <a class="navbar-brand color-icon" href="">
+          <a class="btn navbar-brand color-icon  no-border" href="">
           
             <img
               src="./src/assets/startup.png"
