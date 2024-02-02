@@ -1,5 +1,7 @@
 .modulos {
-  color: white;
+ background-color: #191c24;
+ color: wheat;
+ 
 }
 .navbar {
   position: relative; /* O utiliza "fixed" si quieres que sea fijo en la parte superior */
@@ -13,156 +15,16 @@
 .videoCard {
   color: #faa307;
 }
-.btn {
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
-  border: none;
-  outline: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  background-color: rgb(14, 14, 26);
-  color: rgb(234, 234, 234);
-  font-weight: 700;
-  transition: 0.6s;
-  box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+.Cuerpodiv{
+padding: 0 30px 0 30px;
+border-radius: 15px;  background-color: #191c24;
 }
 
-.btn:active {
-  scale: 0.92;
+.colorNavbar{
+  margin-bottom: 30px;
+  background-color: #191c24;
+}
+.color-icon{
+  color: antiquewhite;
 }
 
-.btn:hover {
-  background: rgb(2, 29, 78);
-  background: linear-gradient(
-    270deg,
-    rgba(2, 29, 78, 0.681) 0%,
-    rgba(31, 215, 232, 0.873) 60%
-  );
-  color: rgb(4, 4, 38);
-}
-
-/* Botones anterior y siguiente de la parte del curso */
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d3a4e;
-  background-size: 400%;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.button-content {
-  position: relative;
-  z-index: 1;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgba(150, 93, 233, 1) 10.8%,
-    rgba(99, 88, 238, 1) 94.3%
-  );
-  transition: all 0.475s;
-}
-
-/* Css boton De icono */
-.btn2 {
-  border-radius: 10px;
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #fefefe;
-  text-transform: uppercase;
-  color: #fefefe;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.btn2::before {
-  border-radius: 10px;
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - -2px);
-  background-color: #212121;
-  transition: 0.3s ease-out;
-  transform: scaleY(1);
-}
-
-.btn2::after {
-  border-radius: 10px;
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 50px);
-  background-color: #212121;
-  transition: 0.3s ease-out;
-  transform: scaleY(1);
-}
-
-.btn2:hover::before {
-  border-radius: 10px;
-  transform: translateY(-25px);
-  height: 0;
-}
-
-.btn2:hover::after {
-  border-radius: 10px;
-  transform: scaleX(0);
-  transition-delay: 0.15s;
-}
-
-.btn2:hover {
-  border-radius: 10px;
-  border: 2px solid #fefefe;
-}
-
-.btn2 span {
-  border-radius: 10px;
-  position: relative;
-  z-index: 3;
-}
-
-button {
-  border-radius: 10px;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-}
-.asidecompo {
-  margin-top: 2em;
-  padding: 3em;
-  width: 50%;
-  border-radius: 10px;
-  background: #232545;
-  box-shadow: 10px 10px 0 rgba(31, 38, 135, 0.37);
-}
-.asidecompo1 {
-  box-shadow: 10px 10px 0 rgba(31, 38, 135, 0.37);
-}
