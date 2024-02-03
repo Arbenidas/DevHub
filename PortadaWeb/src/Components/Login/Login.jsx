@@ -24,7 +24,7 @@ const Login = () => {
                 </label>
             </div>
             <div className='d-grid'>
-                <Link to="/carruseles" >
+                <Link to="/" >
                 <button className='btn w-100'>Iniciar Sesión</button>
                 </Link>
                 
