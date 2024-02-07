@@ -1,4 +1,4 @@
-function ComponenteInfoVideo() {
+function ComponenteInfoVideo(props) {  
   return (
     <>
       {/*Video del curso*/}
@@ -70,6 +70,7 @@ function ComponenteInfoVideo() {
                 </button>
               </div>
             </nav>
+            {/* Apartado de descripcion */}
             <div class="tab-content" id="nav-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -77,14 +78,9 @@ function ComponenteInfoVideo() {
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
                 tabindex="0"
-              >
-                Definición de la función: Una función en JavaScript se define
-                con la palabra clave function, seguida de un nombre, y un
-                conjunto de paréntesis que pueden contener parámetros. Los
-                parámetros son variables que se pasan a la función cuando se
-                llama. El cuerpo de la función, donde se realiza la lógica, está
-                encerrado entre llaves {}.
+              >{props.descripcion}
               </div>
+              {/*Apartado de comunidad*/}
               <div
                 class="tab-pane fade"
                 id="nav-profile"
@@ -92,11 +88,9 @@ function ComponenteInfoVideo() {
                 aria-labelledby="nav-profile-tab"
                 tabindex="0"
               >
-                Llamada a la función: Una vez que una función está definida, se
-                puede llamar en cualquier parte de tu código utilizando el
-                nombre de la función seguido de paréntesis. Si la función
-                requiere parámetros, estos se pasan dentro de los paréntesis.
+                {props.comunidad}
               </div>
+              {/* Apartado de herramientas */}
               <div
                 class="tab-pane fade"
                 id="nav-contact"
@@ -104,10 +98,7 @@ function ComponenteInfoVideo() {
                 aria-labelledby="nav-contact-tab"
                 tabindex="0"
               >
-                Retorno de la función: Las funciones pueden devolver un valor
-                utilizando la palabra clave return. Cuando se llama a una
-                función que devuelve un valor, la llamada a la función se evalúa
-                como ese valor.
+              {props.herramientas}
               </div>
             </div>
           </div>

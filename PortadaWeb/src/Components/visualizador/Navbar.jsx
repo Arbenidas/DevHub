@@ -1,4 +1,4 @@
-import {} from "../../../App"
+import {} from "../../App"
 export default function NavbarCV() {
   return (
     <>
