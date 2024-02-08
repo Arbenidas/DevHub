@@ -7,7 +7,7 @@ export default function NavbarCV() {
           <a class="btn navbar-brand color-icon  no-border" href="">
           
             <img
-              src="./src/assets/startup.png"
+              src="./src/assets/Designer.jpeg"
               alt="Logo"
               width="30"
               height="24"
