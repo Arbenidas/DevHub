@@ -1,11 +1,12 @@
 import "./StyleVisualizador.css";
-export default function ComponenteAside(props) {
+import RegresarObjeto from "../Objetos/RegresarObjeto";
+export default function ComponenteAside(props, RegresarObjeto) {
   return (
     <>
       <div class="accordion-item rounded  no-border">
         <h2 class="accordion-header rounded  h2-color">
           <button
-            class="rounded  accordion-button modulos collapsed"
+            class="accordion-button modulos collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={props.data1}
@@ -20,14 +21,9 @@ export default function ComponenteAside(props) {
           class="accordion-collapse collapse"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body color-body">
-           {props.DescripcionDelContenido}
-          </div>
+          <div class="accordion-body color-body">{props.de}</div>
         </div>
       </div>
-      
-      
-      
     </>
   );
 }
