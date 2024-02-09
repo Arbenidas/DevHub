@@ -2,12 +2,18 @@ import ComponenteAside from "./ComponenteAside.jsx";
 import ComponenteInfoVideo from "./componenteInfoVideos.jsx";
 import Footer from "./FooterVC.jsx";
 export default function ComponenteCompuesto(props) {
+  console.log("Esta es una impresion")
+  let lecciones  = Object.values(props.curso)
+  lecciones.map((leccion)=>{
+    console.log("leccion ------ "+leccion.titulo)
+    console.log("contenido ------ "+leccion.contenido)
+  })
   return (
     <>
-      <div class="container-fluid" data-bs-theme="dark">
-        <div class="row">
-          <div class="col-3 no-padding-left">
-            <div class="accordion accordion-flush" id="accordion1">
+      <div className="container-fluid" data-bs-theme="dark">
+        <div className="row">
+          <div className="col-3 no-padding-left">
+            <div className="accordion accordion-flush" id="accordion1">
               <ComponenteAside
                 data1="#flush-collapse1"
                 data2="flush-collapse1"
@@ -37,30 +43,6 @@ export default function ComponenteCompuesto(props) {
                 data2="flush-collapse5"
                 nombreModulo={props.nombreDelModulo5}
                 DescripcionDelContenido={props.DescripcionDelContenido5}
-              />
-               <ComponenteAside
-                data1="#flush-collapse6"
-                data2="flush-collapse6"
-                nombreModulo={props.nombreDelModulo6}
-                DescripcionDelContenido={props.DescripcionDelContenido6}
-              />
-               <ComponenteAside
-                data1="#flush-collapse7"
-                data2="flush-collapse7"
-                nombreModulo={props.nombreDelModulo7}
-                DescripcionDelContenido={props.DescripcionDelContenido7}
-              />
-               <ComponenteAside
-                data1="#flush-collapse8"
-                data2="flush-collapse8"
-                nombreModulo={props.nombreDelModulo8}
-                DescripcionDelContenido={props.DescripcionDelContenido8}
-              />
-               <ComponenteAside
-                data1="#flush-collapse9"
-                data2="flush-collapse9"
-                nombreModulo={props.nombreDelModulo9}
-                DescripcionDelContenido={props.DescripcionDelContenido9}
               />
 
             </div>
