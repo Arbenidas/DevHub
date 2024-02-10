@@ -1,9 +1,13 @@
 import "./StyleVisualizador.css";
-import RegresarObjeto from "../Objetos/RegresarObjeto";
-export default function ComponenteAside(props, RegresarObjeto) {
+export default function ComponenteAside(props) {
+
+  function enviarVideo(){
+   document.getElementById("iframe").src=(props.videoUrl)
+  }
   return (
     <>
-      <div className="accordion-item rounded  no-border">
+      <div className="accordion-item rounded  no-border" onClick={enviarVideo}>
+      
         <h2 className="accordion-header rounded  h2-color">
           <button
             className="accordion-button modulos collapsed"

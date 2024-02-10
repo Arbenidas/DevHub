@@ -6,12 +6,13 @@ function ComponenteInfoVideo(props) {
         <article className=" videoCard  align-items-center">
           <div className="mt-4 asidecompo1">
             <div className="ratio ratio-16x9">
+              <p class = "h1">{props.titulo}</p>
               <iframe
+              id="iframe"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/SXjIYRih13I?si=a8j8rQjFzQLt7OS4"
+                src='{props.videoUrls}'
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
