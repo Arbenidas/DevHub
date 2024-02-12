@@ -1,0 +1,30 @@
+#backConocenos{
+    width: 100%;
+    height: auto;
+
+}
+#imgConocenos{
+    height: 100%;
+    width: 100%;
+    float: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+#containerText{
+    width: 75%;
+    height: 450px;
+    background-color: #191c24;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.80);
+}
+.pTextConocenos{
+    margin-left: 10%;
+    color: aliceblue;
+    text-align: justify;
+}

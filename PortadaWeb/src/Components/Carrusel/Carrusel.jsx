@@ -18,18 +18,36 @@ const Carrusel = () => {
                       <p class="fs-5 p-1 mx-auto text-center">Explora cursos que te ayudan con tu crecimiento en el area del Desarrollo de Software</p>
       </div>
     <div class="container-fluid pt-3 mt-3">
-      <div class="row w-100 mx-auto my-2 servicio-fila">
-        <div class="col col-lg-6 col-md-12 col-sm-12 d-flex">
-            <div id="carouselExampleIndicators" class="carousel slide w-100">
-              <div class="carousel-inner">
+      <div class="row my-2 servicio-fila">
+        {/*Primer carrusel : Los cursos mas vistos */}
+        <div class="col col-lg-6 col-md-12 col-sm-12 bgstyle">
+        <div class="infoCursosMasVistos">
+            <h3>Los cursos más vistos....</h3>
+
+
+          </div>
+            <div id="carouselExampleIndicators" class="carousel slide w-auto h-auto">
+              <div class="carousel-inner w-100">
                 <div class="carousel-item active d-item">
-                  <img src={imagen4} class="d-block w-100 d-img" alt="..."/>
+                  <img src={imagen4} class="d-block w-100 d-img imghover" alt="..."/>
+                    <div class="capa">
+                        <h3> Curso Machine learning </h3>
+                        <p>Aca podras aprender todo sobre el machine learning lore</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img src={imagen5} class="d-block w-100 d-img" alt="..."/>
+                  <img src={imagen5} class="d-block w-100 d-img imghover" alt="..."/>
+                  <div class="capa">
+                        <h3>Curso de Pascal</h3>
+                        <p>Aca podrás aprender a programar en el gran lenguaje de programación Pascal</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img src={imagen6} class="d-block w-100 d-img" alt="..."/>
+                  <img src={imagen6} class="d-block w-100 d-img imghover" alt="..."/>
+                  <div class="capa">
+                        <h3>Curso de Python</h3>
+                        <p>Aca podras aprender a programar en Pyton</p>
+                    </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -40,22 +58,50 @@ const Carrusel = () => {
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-            </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-6 d-flex">
-                <div id='textForCarrusel' class="w-100 text-center mx-auto">
-                  <h1 class="mt-3 fs-3">Curso de Machine Learning</h1>
-                  <p class="mt-3 textInDiv">
-                    En este curso, aprenderás los fundamentos del Machine Learning. Cubriremos los siguientes temas:<br/><br/>
-                    - Los diferentes tipos de aprendizaje automático.<br/>
-                    - Cómo evaluar el rendimiento de un modelo de aprendizaje automático.<br/>
-                    - Cómo utilizar el aprendizaje automático para resolver problemas del mundo real.<br/>
-                  </p>
+          </div>
+          {/*segundo carrusel : Los cursos mas nuevos */}
+          <div class="col col-lg-6 col-md-12 col-sm-12 bgstyle">
+        <div class="infoCursosMasVistos">
+            <h3>Los cursos más....</h3>
 
 
-
+          </div>
+            <div id="carouselExampleIndicators" class="carousel slide w-auto h-auto">
+              <div class="carousel-inner w-100">
+                <div class="carousel-item active d-item">
+                  <img src={imagen4} class="d-block w-100 d-img imghover" alt="..."/>
+                    <div class="capa">
+                        <h3> Curso Machine learning </h3>
+                        <p>Aca podras aprender todo sobre el machine learning lore</p>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                  <img src={imagen5} class="d-block w-100 d-img imghover" alt="..."/>
+                  <div class="capa">
+                        <h3>Curso de Pascal</h3>
+                        <p>Aca podrás aprender a programar en el gran lenguaje de programación Pascal</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src={imagen6} class="d-block w-100 d-img imghover" alt="..."/>
+                  <div class="capa">
+                        <h3>Curso de Python</h3>
+                        <p>Aca podras aprender a programar en Pyton</p>
+                    </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
           </div>
+          </div>
+          {/*Aca termina el carrusel */}
       </div>
     </div>
 </div>
