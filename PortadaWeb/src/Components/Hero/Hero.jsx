@@ -2,6 +2,7 @@ import './Hero.css'
 import arrow_btn from '../../Assets/arrow_btn.png'
 import play_icon from '../../Assets/play_icon.png'
 import pause_icon from '../../Assets/pause_icon.png'
+import { Link } from 'react-router-dom'
 
 const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
   return (
@@ -10,9 +11,11 @@ const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
             <p>{heroData.text1}</p>
             <p>{heroData.text2}</p>
         </div>
-        <div className="hero-explore">
-            <a href='/VistaCurso' >Explorar cursos</a>
-            <img src={arrow_btn} alt="" />
+        <div className="hero-explore" >
+            <Link to="/visualizacionGeneral"class="text-decoration-none text-black">
+            Explorar cursos
+            <img class="ms-3" src={arrow_btn} alt="" />
+            </Link>
         </div>
         <div className="hero-dot-play">
             <ul className="hero-dots">

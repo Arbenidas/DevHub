@@ -23,7 +23,7 @@ export default function ComponenteAside(props) {
         <div
           id={props.data2}
           className="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
+          data-bs-parent="#accordionFlush"
         >
           <div className="accordion-body color-body">{props.DescripcionDelContenido}</div>
         </div>
