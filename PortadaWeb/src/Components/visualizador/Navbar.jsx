@@ -4,7 +4,7 @@ export default function NavbarCV() {
     <>
       <nav className="navbar" data-bs-theme="dark" >
         <div className="container-fluid">
-          <a className="btn navbar-brand color-icon  no-border" href="">
+          <a className="btn navbar-brand color-icon  no-border" href="/">
           
             <img
               src="./src/assets/Designer.jpeg"
