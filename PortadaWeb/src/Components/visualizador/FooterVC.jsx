@@ -46,8 +46,8 @@ export default function Footer(){
                             </div>
                             <div class="footer-social-icon">
                                 <span>Siguenos</span>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
                                 <a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>

@@ -8,6 +8,7 @@ import Signup from "./Components/Login/Signup.jsx";
 import {CursoDefault} from "./Components/Cursos/CursoJava.jsx";
 import {Cursos} from "./Components/Cursos/Cursos.jsx";
 import Conocenos from "./Components/Conocenos/Conocenos.jsx";
+import {VistageneralCurso} from "./Components/Cursos/vistaCursoGeneral.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Route path="/VistaCurso" element={<CursoDefault id='1' />}/>
   <Route path="/Cursos" element={<Cursos/>}/>
   
+  <Route path="/VistaGeneral" element = {<VistageneralCurso/>}/>
   </Routes>
   </BrowserRouter>
   

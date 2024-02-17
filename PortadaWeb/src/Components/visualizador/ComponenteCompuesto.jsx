@@ -3,7 +3,7 @@ import { useState } from "react";
 import ComponenteInfoVideo from "./componenteInfoVideos.jsx";
 import Footer from "./FooterVC.jsx";
 export default function ComponenteCompuesto(props) {
-  let lecciones  = Object.values(props.curso)
+  let lecciones = Object.values(props.curso);
   let componentesAside = [];
   for (let i = 0; i < lecciones.length; i++) {
     const leccion = lecciones[i];
@@ -14,7 +14,7 @@ export default function ComponenteCompuesto(props) {
         data2={`flush-collapse${i + 1}`}
         nombreModulo={leccion.titulo}
         DescripcionDelContenido={leccion.contenido}
-        videoUrl = {leccion.url_columna}
+        videoUrl={leccion.url_columna}
       />
     );
   }
@@ -25,13 +25,13 @@ export default function ComponenteCompuesto(props) {
         <div className="row">
           <div className="col-3 no-padding-left">
             <div className="accordion accordion-flush" id="accordion1">
-            {componentesAside}
+              {componentesAside}
             </div>
           </div>
-          <ComponenteInfoVideo   descripcion = "" herramientas = "" comunidad = "" />
+          <ComponenteInfoVideo descripcion="" herramientas="" comunidad="" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
