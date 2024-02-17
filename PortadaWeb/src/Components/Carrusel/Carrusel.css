@@ -13,12 +13,7 @@
     margin-top: 30px;
 }
 
-.container-fluid{
-    background-color: whitesmoke;
-    height: 40rem;
-    width: 90%;
-    border-radius: 15px;
-}
+
 #introCursosText{
     width: 500px;
     height: 250px;
