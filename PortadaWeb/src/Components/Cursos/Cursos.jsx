@@ -3,22 +3,21 @@ import ComponenteCompuesto from '../visualizador/ComponenteCompuesto';
 import NavbarCV from '../visualizador/Navbar';
 import axios from 'axios';
 
-export function CursoDefault() {
+export function Cursos() {
   // Estado para almacenar los datos del curso
-  const [curso, setCurso] = useState(null);
+  const [cursos, setCursos] = useState(null);
 
   useEffect(() => {
-    
-    const url = 'http://localhost/DevHub/PortadaWeb/ccCursos.php?idcurso=1';
+    const url = 'http://localhost/DevHub/PortadaWeb/listaCursos.php';
 
     axios.get(url)
       .then(response => {
         // Manejar la respuesta de la API
         console.log('Respuesta del servidor:', response.data);
         if (response.data.success) {
-          console.log('Detalles del curso:', response.data.curso);
+          console.log('Detalles del cursos:', response.data.cursos);
           // Guardar los datos del curso en el estado
-          setCurso(response.data.curso);
+          setCurso(response.data.cursos);
         } else {
           console.error('Error:', response.data.message);
         }
@@ -33,7 +32,7 @@ export function CursoDefault() {
     <>
       <NavbarCV />
       {/* Renderizar el componente compuesto y pasar el objeto del curso como propiedad */}
-      {curso && <ComponenteCompuesto curso={curso} />}
+      {/* {cursos && <ComponenteCompuesto cursos={cursos} />} */}
     </>
   );
 }

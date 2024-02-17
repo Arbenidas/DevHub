@@ -12,19 +12,17 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("La conexión falló: " . mysqli_connect_error());
 } else {
-    $id2 = $_GET['idcurso'];
-    $id = 1;
     // Consulta para obtener las leccions del cuso con ID 1
-    $sql = "SELECT * FROM lecciones WHERE id_curso = '$id2' ";
+    $sql = "SELECT * FROM cursos ";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
         // Curso encontrado, obtener los detalles del curso y enviarlos como respuesta JSON
-        $curso = array();
+        $cursos = array();
         while($row = mysqli_fetch_assoc($result)) {
-            $curso[] = $row;
+            $cursos[] = $row;
         }
-        echo json_encode(["success" => true, "curso" => $curso]);
+        echo json_encode(["success" => true, "cursos" => $cursos]);
     } else {
         // Curso no encontrado, enviar respuesta JSON con error
         echo json_encode(["success" => false, "message" => "Error al traer el curso"]);
