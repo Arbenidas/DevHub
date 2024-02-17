@@ -1,8 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
 import Background from "../Background/Background";
 import Carrusel from "../Carrusel/Carrusel";
+import Footer from "../FooterLP/Footer";
+import FooterVC from "../visualizador/FooterVC.jsx";
 
 
 function LandingPage() {
@@ -13,6 +15,7 @@ function LandingPage() {
     ]
     const [heroCount,setHeroCount] = useState(2);
     const [playStatus,setPlayStatus] = useState(false)
+
     return (
       <div>
           <Navbar/>
@@ -24,6 +27,7 @@ function LandingPage() {
           playStatus={playStatus}/>
           <Background playStatus={playStatus} heroCount={heroCount}/>
           <Carrusel/>
+          <Footer/>
       </div>
     )
   }
