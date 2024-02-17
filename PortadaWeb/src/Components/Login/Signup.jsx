@@ -46,6 +46,10 @@ const Signup = () => {
                 <input type="email" placeholder='Introducir Nombres' className='form-control' onChange={(e)=>setUsername(e.target.value)}/>
             </div>
             <div class="mb-2">
+                <label htmlFor="email">Email</label>
+                <input type="email" placeholder='Email' className='form-control'/>
+            </div>
+            <div class="mb-2">
                 <label htmlFor="password">Contraseña</label>
                 <input type="password" placeholder='Contraseña' onChange={(e)=>setPassword(e.target.value)} className='form-control'/>
             </div>
