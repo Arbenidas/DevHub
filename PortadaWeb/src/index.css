@@ -4,7 +4,7 @@
   font-family: Poppins;
 }
 body{
-  background: linear-gradient(to left, #000000, #080a25);
+  background-color: #000000;
   
 }
 ::-webkit-scrollbar {

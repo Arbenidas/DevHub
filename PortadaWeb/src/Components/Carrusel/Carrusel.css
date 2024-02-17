@@ -1,27 +1,36 @@
 #parte-blanca{
-    height: 1200px;
+    height: 950px;
     width: 100%;
-    background-color: #191c24;
+    background-color: whitesmoke;
 }
 #carouselExampleIndicators{
     margin-top: 30px;
 }
+#carouselExampleIndicators1{
+    margin-top: 30px;
+}
+#carouselExampleIndicators2{
+    margin-top: 30px;
+}
+
 .container-fluid{
-    background-color: black;
+    background-color: whitesmoke;
     height: 40rem;
     width: 90%;
+    border-radius: 15px;
 }
 #introCursosText{
     width: 500px;
     height: 250px;
-    color: aliceblue;
+    color: #191c24;
 }
 .carousel-inner{
-    max-height: 17rem;
-    min-height: 10rem;
+    height: 20rem;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    border:10px;
+    box-shadow: 0px 10px 20px 5px  rgba(0, 0, 0, 0.75);
 }
 .textInDiv{
     margin-left: 7%;
@@ -35,6 +44,7 @@
     border-radius: 6px;
     box-shadow: 0px 15px 25px  rgba(0, 0, 0, 0.50);
     cursor: pointer;
+    height: 100%;
 }
 .imghover{
     transition: all 500ms ease-out;
@@ -61,7 +71,7 @@
 }
 .capa > h3{
     color: white;
-    font-weight: 400;
+    font-weight: 400 bold;
     margin-top: 30px;
     margin-bottom: 120px;
     font-size: 15px;
@@ -70,6 +80,7 @@
 }
 .capa > p {
     color: white;
+    opacity: 0.8;
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
@@ -77,17 +88,26 @@
     margin: auto;
 }
 .infoCursosMasVistos > h3{
-    color:whitesmoke;
+    color: #191c24;
     margin-top: 15px;
     margin-left: 5px;
     font-size: 20px;
 }
 .bgstyle{
-    background-color: #191c24;
-    width: 47%;
+    background-color: whitesmoke;
+    width: 31%;
     margin-left: 20px;
-    height: 22rem;
+    height: 30rem;
     border-radius: 10px;
+}
+.buttonVerMas{
+    width: 25%;
+    height: 10%;
+    margin-top: 20px;
+    background-color: rgb(56, 143, 56);
+    border-color: white;
+    border-style: none;
+    color: white;
 }
 
 

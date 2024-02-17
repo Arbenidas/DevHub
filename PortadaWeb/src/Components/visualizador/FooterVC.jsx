@@ -1,9 +1,6 @@
-import React from 'react'
-import './Footer.css'
-
-const Footer = () => {
-  return (
-    <footer class="footer-section">
+export default function Footer(){
+    return<>
+        <footer class="footer-section mt-5">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row">
@@ -116,7 +113,5 @@ const Footer = () => {
             </div>
         </div>
     </footer>
-  )
+    </>
 }
-
-export default Footer

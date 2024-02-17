@@ -1,11 +1,16 @@
 import "./StyleVisualizador.css";
 export default function ComponenteAside(props) {
+
+  function enviarVideo(){
+   document.getElementById("iframe").src=(props.videoUrl)
+  }
   return (
     <>
-      <div class="accordion-item rounded  no-border">
-        <h2 class="accordion-header rounded  h2-color">
+      <div className="accordion-item rounded  no-border" onClick={enviarVideo}>
+      
+        <h2 className="accordion-header rounded  h2-color">
           <button
-            class="rounded  accordion-button modulos collapsed"
+            className="accordion-button modulos collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={props.data1}
@@ -17,17 +22,12 @@ export default function ComponenteAside(props) {
         </h2>
         <div
           id={props.data2}
-          class="accordion-collapse collapse"
+          className="accordion-collapse collapse"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body color-body">
-           {props.DescripcionDelContenido}
-          </div>
+          <div className="accordion-body color-body">{props.DescripcionDelContenido}</div>
         </div>
       </div>
-      
-      
-      
     </>
   );
 }

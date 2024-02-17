@@ -12,7 +12,7 @@ const Login = () => {
         if (username.length === 0 || password.length === 0) {
             alert('Ingrese un nombre de usuario y contraseña');
         } else {
-            const url = "http://localhost/enquiry.php";
+            const url = "http://localhost/DevHub/PortadaWeb/enquiry.php";
             let fData = new FormData();
             fData.append('username', username);
             fData.append('password', password);
