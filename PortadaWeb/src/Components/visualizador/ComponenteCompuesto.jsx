@@ -21,7 +21,7 @@ export default function ComponenteCompuesto(props) {
 
   return (
     <>
-      <div className="container-fluid" data-bs-theme="dark">
+      <div className="container-fluid" >
         <div className="row">
           <div className="col-3 no-padding-left">
             <div className="accordion accordion-flush" id="accordion1">
