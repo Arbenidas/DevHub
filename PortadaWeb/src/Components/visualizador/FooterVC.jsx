@@ -8,8 +8,8 @@ export default function Footer(){
                         <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <h4>Encuentranos</h4>
+                                <span>Condominio Centro Roosevelt, Av. Olímpica, San Salvador</span>
                             </div>
                         </div>
                     </div>
@@ -17,8 +17,8 @@ export default function Footer(){
                         <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <h4>Llamanos</h4>
+                                <span>2209-2834</span>
                             </div>
                         </div>
                     </div>
@@ -26,8 +26,8 @@ export default function Footer(){
                         <div class="single-cta">
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <h4>Correo</h4>
+                                <span>Contactanos@ufg.edu.sv</span>
                             </div>
                         </div>
                     </div>
@@ -58,26 +58,25 @@ export default function Footer(){
                                 <h3>Link utiles</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="#">Acerca de</a></li>
                                 <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Acerca de nosotros</a></li>
+                                <li><a href="#">Nuestros Servicios</a></li>
+                                <li><a href="#">Equipo Experto</a></li>
+                                <li><a href="#">Contactanos</a></li>
+                                <li><a href="#">Ultimas noticias</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
+                                <h3>Suscribete</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                <p>No deje de suscribirse a nuestros nuevos feeds, por favor rellene el siguiente formulario.</p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
@@ -95,17 +94,17 @@ export default function Footer(){
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">DevHubTeam</a></p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#">Terminos</a></li>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Politica</a></li>
+                                <li><a href="#">Contactanos</a></li>
                             </ul>
                         </div>
                     </div>

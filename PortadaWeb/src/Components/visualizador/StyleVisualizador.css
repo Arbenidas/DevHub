@@ -207,3 +207,61 @@ color: #ff5e14;
 font-size: 14px;
 color: #878787;
 }
+
+/* boton del navbar*/
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:focus {
+  outline: none; /* Elimina el contorno predeterminado del enlace */
+}
+
+.button {
+  
+  --bg: #000;
+  --hover-bg: #ff5e14;
+  --hover-text: #000;
+  
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+/* NavabarVistaGeneralCuros */
+.navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: #ff5e14;
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+.botonsin{
+  background-color: #191c24;
+
+}
+.botonsin:hover{
+  background-color:#ff5e14 ;
+}
