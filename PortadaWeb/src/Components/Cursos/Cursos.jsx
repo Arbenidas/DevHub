@@ -6,6 +6,7 @@ import Footer from "../visualizador/FooterVC";
 import Bodycomponent from "./ComponenteCard";
 import ComponenteCard from "./ComponenteCard";
 import CardCompuesto from "./CardCompuesto";
+import { useParams } from 'react-router-dom';
 
 export function Cursos(props) {
   // Estado para almacenar los datos del curso
@@ -13,6 +14,8 @@ export function Cursos(props) {
 
   useEffect(() => {
     const url = "http://localhost/DevHub/PortadaWeb/listaCursos.php";
+    // let { idc } = useParams();
+    // console.log("UNNNN ID "+idc)
 
     axios
       .get(url)
@@ -20,9 +23,9 @@ export function Cursos(props) {
         // Manejar la respuesta de la API
         console.log("Respuesta del servidor:", response.data);
         if (response.data.success) {
-          console.log("Detalles del cursos:", response.data.cursos);
           // Guardar los datos del curso en el estado
-          setCurso(response.data.cursos);
+          setCursos(response.data.cursos);
+          console.log("Detalles del cursos:", response.data.cursos);
         } else {
           console.error("Error:", response.data.message);
         }
@@ -36,7 +39,7 @@ export function Cursos(props) {
   return (
     <>
       <NavbarCV />
-      <CardCompuesto/>
+      {cursos && <CardCompuesto cursos={cursos}/>}
 
       {/* Renderizar el componente compuesto y pasar el objeto del curso como propiedad */}
       {/* {cursos && <ComponenteCompuesto cursos={cursos} />} */}

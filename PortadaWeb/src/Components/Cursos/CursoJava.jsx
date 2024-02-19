@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
 import ComponenteCompuesto from '../visualizador/ComponenteCompuesto';
 import NavbarCV from '../visualizador/Navbar';
 import axios from 'axios';
@@ -7,9 +9,12 @@ export function CursoDefault(props) {
   // Estado para almacenar los datos del curso
   const [curso, setCurso] = useState(null);
 
+let { idc } = useParams();
+
   useEffect(() => {
     
-    const url = 'http://localhost/DevHub/PortadaWeb/ccCursos.php?idcurso='+props.id;
+    // const url = 'http://localhost/DevHub/PortadaWeb/ccCursos.php?idcurso='+props.id;
+    const url = 'http://localhost/DevHub/PortadaWeb/ccCursos.php?idcurso='+idc;
 
     axios.get(url)
       .then(response => {
@@ -17,6 +22,8 @@ export function CursoDefault(props) {
         console.log('Respuesta del servidor:', response.data);
         if (response.data.success) {
           console.log('Detalles del curso:', response.data.curso);
+          console.log("AAAAAAAAAAAAAAAAAAAAAAAAUN AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ID")
+          console.log(idc)
           // Guardar los datos del curso en el estado
           setCurso(response.data.curso);
         } else {
